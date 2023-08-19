@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalkulator Kalori</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kalkulator <span>Kalori</span></h1>
+      <form id="kalkulator-form">
+        <div class="input-component">
+          <label for="jenis-kelamin">Jenis Kelamin :</label>
+          <select id="jenis-kelamin" name="jenis-kelamin">
+            <option value="pria">Pria</option>
+            <option value="wanita">Wanita</option>
+          </select>
+          <label for="usia">Usia :</label>
+          <input type="number" id="usia" name="usia" required />
+        </div>
+        <div class="input-component">
+          <label for="berat-badan">Berat Badan (kg) :</label>
+          <input type="number" id="berat-badan" name="berat-badan" required />
+          <label for="tinggi-badan">Tinggi Badan (cm) :</label>
+          <input type="number" id="tinggi-badan" name="tinggi-badan" required />
+        </div>
+
+        <div class="input-component">
+          <label for="jenis-aktivitas">Jenis Aktivitas :</label>
+          <select id="jenis-aktivitas" name="jenis-aktivitas">
+            <option value="menetap">Menetap (Tidak Aktif)</option>
+            <option value="aktif-ringan">Aktif Ringan</option>
+            <option value="cukup-aktif">Cukup Aktif</option>
+            <option value="sangat-aktif">Sangat Aktif</option>
+            <option value="sangat-aktif-berat">
+              Sangat Aktif (Olahraga Berat)
+            </option>
+          </select>
+          <label for="jenis-rumus">Pilih Rumus :</label>
+          <select id="jenis-rumus" name="jenis-rumus">
+            <option value="harris-benedict">Harris-Benedict</option>
+            <option value="mifflin-st-jeor">Mifflin St Jeor</option>
+          </select>
+        </div>
+        <button type="button" id="hitung-btn">Hitung</button>
+      </form>
+      <div id="hasil" class="hasil">
+        Kebutuhan kalori anda adalah : <span id="hasil-kalori">-</span> kalori /
+        hari
+      </div>
+      <div id="penurunan-berat-badan">
+        <h3>Informasi Penurunan Berat Badan</h3>
+        <p id="penurunan-ringan">Penurunan Berat Badan Ringan : -</p>
+        <p id="penurunan-normal">Penurunan Berat Badan Normal : -</p>
+        <p id="penurunan-ekstrem">Penurunan Berat Badan Ekstrem : -</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
