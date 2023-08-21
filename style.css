@@ -37,12 +37,22 @@ h1 {
   margin-bottom: 30px;
 }
 
-form label,
-form select,
-form input[type="number"] {
+form label {
   display: block;
   margin-bottom: 10px;
   width: 100%;
+}
+
+form select,
+form input[type="number"] {
+  width: 100%;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 form select,
