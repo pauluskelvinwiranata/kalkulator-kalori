@@ -53,6 +53,10 @@ form input[type="number"] {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  margin-bottom: 20px;
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 form select,
@@ -87,6 +91,7 @@ button:hover {
   margin-top: 20px;
   font-weight: bold;
   text-align: right;
+  font-size: 12px;
 }
 #penurunan-berat-badan {
   display: none;
